@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora Online</title>
+</head>
+
+<body>
+    <script src="scripts.js"></script>
+    <main id="container">
+        <h2 id="title">Calculadora Online</h2>
+        <input id="input-text" type="text" disabled>
+        <div id="calculator">
+            <button type="button" class="operator" onclick="insert('+')">+</button>
+            <button type="button" class="operator" onclick="insert('-')">-</button>
+            <button type="button" class="operator" onclick="insert('*')">&times;</button>
+            <button type="button" class="operator" onclick="insert('/')">&divide;</button>
+            <button type="button" class="number" onclick="insert('7')">7</button>
+            <button type="button" class="number" onclick="insert('8')">8</button>
+            <button type="button" class="number" onclick="insert('9')">9</button>
+            <button type="button" class="number" onclick="insert('4')">4</button>
+            <button type="button" class="number" onclick="insert('5')">5</button>
+            <button type="button" class="number" onclick="insert('6')">6</button>
+            <button type="button" class="number" onclick="insert('1')">1</button>
+            <button type="button" class="number" onclick="insert('2')">2</button>
+            <button type="button" class="number" onclick="insert('3')">3</button>
+            <button type="button" class="number" onclick="insert('0')">0</button>
+            <button type="button" class="point" onclick="insert('.')">.</button>
+            <button type="button" class="clear" onclick="clean()">C</button>
+            <button type=" button" class="result" onclick="somar()">=</button>
+        </div>
+    </main>
+</body>
+
+</html>
